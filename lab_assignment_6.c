@@ -2,6 +2,16 @@
 
 int search(int numbers[], int low, int high, int value) 
 {
+	int range = high - low;
+
+    for(int i = 0; i<=range; i++)
+    {
+        if(numbers[low + i] == value)
+        {
+            return low + i;
+        }
+    }
+
 	return -1;
 }
 
